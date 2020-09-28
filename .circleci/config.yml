@@ -4,9 +4,9 @@ jobs:
   build: 
   # node/test:
     docker:
-    - image: cimg/node:13.11.0
+    - image: cimg/node:12.18.4
     steps:
-    # - checkout
+    - checkout
     - run: npm install
     - run: npm test
 #         command: |
